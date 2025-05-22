@@ -26,12 +26,21 @@ const NewsletterBox = () => {
           required
         />
 
-        <button 
-          type="submit"
-          className="bg-black text-white text-xs px-10 py-4 rounded-r-md"
-        >
-          SUBSCRIBE
-        </button>
+    <button
+  type="submit"
+  className="
+    bg-black text-white text-xs px-10 py-4 rounded-r-md 
+    hover:bg-[rgb(198,196,196)] hover:text-black 
+    hover:border hover:border-black
+    transition
+  "
+>
+  SUBSCRIBE
+</button>
+
+
+
+
       </form>
     </div>
   );
