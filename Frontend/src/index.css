@@ -10,6 +10,7 @@ a.active hr{
 
 * {
     font-family: Outfit;
+    background-color: rgb(198, 196, 196);
 }
 
 .prata-regular {
@@ -18,9 +19,13 @@ a.active hr{
     font-style: normal;
 }
 
-@media (max-width:648px) {
-    a.active {
-        background-color: black;
-        color: white;
-    }
+::-webkit-scrollbar{
+  display:none;
+}
+
+@media (max-width: 640px) {
+  a.active {
+    background-color: black;
+    color: white;
+  }
 }

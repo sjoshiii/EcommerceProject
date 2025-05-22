@@ -13,10 +13,14 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import SearchBar from './components/SearchBar'
 
+// for notification prodtuct added or no to cart library header
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
   return (
     <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
+    <ToastContainer/>
     <Navbar/>
     <SearchBar/>
     <Routes>
@@ -29,7 +33,6 @@ const App = () => {
 <Route path='/login' element={<Login/>}/>
 <Route path='/place-order' element={<PlaceOrder/>}/>
 <Route path='/orders' element={<Orders/>}/>
-
     </Routes>
     <Footer/>
     </div>
